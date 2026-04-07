@@ -32,7 +32,7 @@ export default defineAgent({
       vad,
       stt: new inference.STT({ language: 'multi' }),
       llm: openai.LLM.withGroq({
-        model: 'openai/gpt-oss-120b',
+        model: 'meta-llama/llama-4-scout-17b-16e-instruct',
         apiKey: process.env.GROQ_API_KEY,
         temperature: 0.7,
       }),
